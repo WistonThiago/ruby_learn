@@ -6,5 +6,3 @@ end
 
 ReverseWord::puts 'The result is'
 puts "\n"
-NormalWord::puts 'The result is'
-puts "\n"

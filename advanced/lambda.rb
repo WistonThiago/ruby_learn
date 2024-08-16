@@ -1,9 +1,9 @@
-#first_lambda = lambda { puts "My first lambda" }
-#first_lambda.call
+first_lambda = lambda { puts "My first lambda" }
+first_lambda.call
 
-# name = -> (names){ names.each { |name| puts name } }
-# names = ['One', 'Two']
-# name.call(names)
+name = -> (names){ names.each { |name| puts name } }
+names = ['One', 'Two']
+name.call(names)
 
 my_lambda = lambda do |numbers|
   index = 0
