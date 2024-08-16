@@ -1,0 +1,20 @@
+#first_lambda = lambda { puts "My first lambda" }
+#first_lambda.call
+
+# name = -> (names){ names.each { |name| puts name } }
+# names = ['One', 'Two']
+# name.call(names)
+
+my_lambda = lambda do |numbers|
+  index = 0
+  puts 'Current number + Next number'
+  numbers.each do |number|
+    return if numbers[index] == numbers.last
+    puts "(#{numbers[index]}) + (#{numbers[index + 1]})"
+    puts numbers[index] + numbers[index + 1]
+    index += 1
+  end
+end
+
+numbers = [1, 2, 3, 4]
+my_lambda.call(numbers)
